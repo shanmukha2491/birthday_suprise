@@ -9,32 +9,33 @@ const memes = [
   {
     id: 1,
     image: meme1,
-    caption: "Me pretending I'm not waiting for your reply.",
+    caption: "POV: One random conversation somehow lasted for hours.",
   },
   {
     id: 2,
     image: meme2,
-    caption: "Average conversation with you 😂",
+    caption: "Every movie was a little better because we watched it together.",
   },
   {
     id: 3,
     image: meme3,
-    caption: "You after roasting everyone.",
+    caption: "That one song... and suddenly all the old memories come back.",
   },
   {
     id: 4,
-    image: meme4,
-    caption: "Me trying to act normal.",
+    image: meme6,
+    caption: "Funny how the smallest moments are often the most memorable.",
   },
   {
     id: 5,
     image: meme5,
-    caption: "Our combined brain cells.",
+    caption: "Just random chats... somehow becoming memories worth keeping.",
   },
   {
     id: 6,
-    image: meme6,
-    caption: "You being the main character.",
+    image: meme4,
+    caption:
+      "Watching the movie while secretly judging every single character.",
   },
 ];
 

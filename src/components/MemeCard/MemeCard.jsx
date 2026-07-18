@@ -2,49 +2,35 @@ import { motion } from "framer-motion";
 
 const MemeCard = ({ image, caption }) => {
   return (
-    <div
-      className="group h-[420px] w-full cursor-pointer"
-      style={{ perspective: "1200px" }}
+    <motion.div
+      whileHover={{
+        y: -10,
+        scale: 1.04,
+      }}
+      whileTap={{ scale: 0.98 }}
+      transition={{
+        type: "spring",
+        stiffness: 250,
+        damping: 18,
+      }}
+      className="group h-full overflow-hidden rounded-3xl border border-grey-100 bg-white shadow-lg"
     >
-      <motion.div
-        whileHover={{ rotateY: 180 }}
-        transition={{
-          duration: 0.7,
-          ease: "easeInOut",
-        }}
-        className="relative h-full w-full"
-        style={{
-          transformStyle: "preserve-3d",
-        }}
-      >
-        {/* FRONT */}
+      {/* Image */}
 
-        <div
-          className="absolute inset-0 overflow-hidden rounded-3xl bg-white shadow-xl"
-          style={{
-            backfaceVisibility: "hidden",
-          }}
-        >
-          <img src={image} alt="" className="h-full w-full object-cover" />
+      <div className="overflow-hidden">
+        <img
+          src={image}
+          alt={caption}
+          className="h-80 w-full object-cover transition-transform duration-500 group-hover:scale-110"
+        />
+      </div>
 
-          <div className="absolute bottom-5 left-5 rounded-full bg-white/80 px-4 py-2 backdrop-blur">
-            😂 Meme Card
-          </div>
-        </div>
+      {/* Caption */}
 
-        {/* BACK */}
-
-        <div
-          className="absolute inset-0 flex flex-col items-center justify-center rounded-3xl bg-gradient-to-br from-pink-400 to-purple-500 p-8 text-center text-white shadow-xl"
-          style={{
-            transform: "rotateY(180deg)",
-            backfaceVisibility: "hidden",
-          }}
-        >
-          <p className="mt-6 leading-8 text-lg">{caption}</p>
-        </div>
-      </motion.div>
-    </div>
+      <div className="flex min-h-[110px] items-center justify-center p-6">
+        <p className="text-center text-lg leading-7 text-gray-700">{caption}</p>
+      </div>
+    </motion.div>
   );
 };
 
