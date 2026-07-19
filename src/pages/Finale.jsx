@@ -110,19 +110,27 @@ const Finale = () => {
             }}
             className="z-10 max-w-2xl rounded-3xl bg-white/80 p-10 text-center shadow-2xl backdrop-blur-xl"
           >
-            <motion.h1
-              initial={{
-                y: -30,
-                opacity: 0,
-              }}
-              animate={{
-                y: 0,
-                opacity: 1,
-              }}
-              className="text-2xl font-black text-pink-500 md:text-6xl"
-            >
-              🎉 Happy Birthday! 🎉
-            </motion.h1>
+            <div className="flex items-center justify-center gap-5">
+              <motion.span
+                animate={{ rotate: [-10, 10, -10] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
+                className="text-5xl"
+              >
+                🎉
+              </motion.span>
+
+              <h1 className="text-2xl font-black text-pink-500 md:text-6xl">
+                Happy Birthday!
+              </h1>
+
+              <motion.span
+                animate={{ rotate: [10, -10, 10] }}
+                transition={{ repeat: Infinity, duration: 1.5 }}
+                className="text-5xl"
+              >
+                🎉
+              </motion.span>
+            </div>
 
             <img
               src={celebrationGif}
