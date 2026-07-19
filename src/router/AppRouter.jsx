@@ -8,11 +8,10 @@ import Reasons from "../pages/Reasons";
 import Feelings from "../pages/Feelings";
 import Finale from "../pages/Finale";
 
-const AppRouter = () => {
+const AppRouter = ({ musicRef }) => {
   return (
     <Routes>
-      <Route path="/" element={<Landing />} />
-
+      <Route path="/" element={<Landing musicRef={musicRef} />} />
       <Route path="/birthday" element={<Birthday />} />
 
       <Route path="/wrapped" element={<Wrapped />} />

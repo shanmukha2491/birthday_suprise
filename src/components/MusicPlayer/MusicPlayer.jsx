@@ -1,32 +1,34 @@
-import { useEffect, useRef, useState } from "react";
+import { forwardRef, useImperativeHandle, useRef, useState } from "react";
 import { FaMusic, FaPause } from "react-icons/fa";
 import music from "../../assets/music/background.mp3";
 
-const MusicPlayer = () => {
+const MusicPlayer = forwardRef((props, ref) => {
   const audioRef = useRef(null);
   const [playing, setPlaying] = useState(false);
 
-  useEffect(() => {
-    const playMusic = async () => {
+  useImperativeHandle(ref, () => ({
+    playMusic: async () => {
       try {
         await audioRef.current.play();
         setPlaying(true);
       } catch (err) {
-        console.log("Autoplay blocked");
+        console.log("Unable to play music");
       }
-    };
+    },
+  }));
 
-    playMusic();
-  }, []);
-
-  const toggleMusic = () => {
+  const toggleMusic = async () => {
     if (playing) {
       audioRef.current.pause();
+      setPlaying(false);
     } else {
-      audioRef.current.play();
+      try {
+        await audioRef.current.play();
+        setPlaying(true);
+      } catch (err) {
+        console.log("Unable to play music");
+      }
     }
-
-    setPlaying(!playing);
   };
 
   return (
@@ -41,6 +43,6 @@ const MusicPlayer = () => {
       </button>
     </>
   );
-};
+});
 
 export default MusicPlayer;

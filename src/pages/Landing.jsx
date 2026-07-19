@@ -7,7 +7,7 @@ import helloGif from "../assets/gifs/hello.gif";
 import excitedGif from "../assets/gifs/excited.gif";
 import calmGif from "../assets/gifs/calm.gif";
 
-const Landing = () => {
+const Landing = ({ musicRef }) => {
   const navigate = useNavigate();
 
   const [step, setStep] = useState(1);
@@ -32,6 +32,9 @@ const Landing = () => {
   };
 
   const handleYes = () => {
+    // Start music
+    musicRef?.current?.playMusic();
+
     confetti({
       particleCount: 120,
       spread: 90,
@@ -159,7 +162,6 @@ const Landing = () => {
               >
                 Let's Go ✨
               </button>
-
             </motion.div>
           )}
 
