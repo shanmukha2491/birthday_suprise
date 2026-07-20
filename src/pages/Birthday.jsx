@@ -56,24 +56,23 @@ const Birthday = () => {
             className="mt-24 grid md:grid-cols-3 gap-8"
           >
             <QuoteCard
-              emoji="😂"
-              title="Professional Menace"
-              text="Certified expert at making people laugh."
+              emoji="🧸"
+              title="Tiny Human Energy"
+              text="Somehow manages to be an adult and an adorable little kid at the exact same time."
             />
 
             <QuoteCard
-              emoji="🎂"
-              title="Birthday Rule"
-              text="Calories don't count today."
+              emoji="🍰"
+              title="Birthday Physics"
+              text="On birthdays, calories become compliments. It's basic science."
             />
 
             <QuoteCard
-              emoji="❤️"
-              title="Special Human"
-              text="Thanks for making ordinary days a little brighter."
+              emoji="🤍"
+              title="Safe Place"
+              text="Thank you for being the kind of person whose presence quietly makes everything feel a little better."
             />
           </motion.div>
-
           {/* Button */}
 
           <div className="mt-24 text-center">

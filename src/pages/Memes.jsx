@@ -66,8 +66,8 @@ const Memes = () => {
           <h2 className="text-2xl font-bold">Final Observation 🧐</h2>
 
           <p className="mt-5 text-lg text-gray-600">
-            Scientists still haven't figured out how one person can be this
-            funny without even trying.
+            Your presence has a strangely calming effect. It's one of those
+            things that's hard to explain but impossible not to notice.
           </p>
         </motion.div>
 

@@ -15,23 +15,23 @@ export const observations = [
   },
   {
     id: 3,
-    emoji: "😂",
-    title: "Unintentional Comedy",
-    text: "You never try to be funny, yet somehow you end up making people laugh the most.",
+    emoji: "🧸",
+    title: "Your Childlike Side",
+    text: "You have this adorable childlike excitement that shows up in the smallest moments. It never feels immature—it just makes you incredibly wholesome and somehow impossible not to smile at.",
     gradient: "from-yellow-400 to-orange-400",
   },
   {
     id: 4,
     emoji: "✨",
     title: "Feeling Special",
-    text: "Some conversations with you have made me feel genuinely important. I don't think you even realize when you do it.",
+    text: "Some conversations with you have made me feel genuinely important. I don't think you even realize when you do it, but those little moments have stayed with me.",
     gradient: "from-purple-400 to-pink-400",
   },
 ];
 
 export const littleThings = [
   "🍜 Food instantly improves your mood.",
-  "🧸 You still get excited like a kid over little things.",
+  "🧸 You get excited over little things like a kid, and it's honestly adorable.",
   "🌎 You're realistic without becoming pessimistic.",
   "💬 You know when to apologize, and when to forgive.",
   "☀️ You're surprisingly self-aware.",
@@ -40,8 +40,8 @@ export const littleThings = [
 export const achievements = [
   "🏆 Master of Genuine Apologies",
   "🏆 Professional Food Explorer",
-  "🏆 Unintentional Comedian",
-  "🏆 Certified Comfort Person",
+  "🏆 Certified Little Sunshine",
+  "🏆 Official Comfort Person",
   "🏆 Realistic Thinker",
-  "🏆 Childhood Still Installed",
+  "🏆 Childhood Never Uninstalled",
 ];
