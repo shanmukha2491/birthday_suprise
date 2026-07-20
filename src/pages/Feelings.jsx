@@ -31,7 +31,7 @@ const Feelings = () => {
           transition={{ delay: 0.3 }}
           className="mt-4 text-center text-gray-500 italic"
         >
-          Just a tiny note from me.
+          Just one last thing I wanted to tell you.
         </motion.p>
 
         {/* Letter */}
@@ -39,45 +39,85 @@ const Feelings = () => {
         <div className="mt-12 w-full max-w-3xl">
           <LetterCard>
             <div className="space-y-6 text-lg leading-9 text-gray-700">
+              <p className="text-xl font-semibold">Dear Dakshitha,</p>
+
               <p>
-                If you've made it this far... thank you for entertaining my
-                random idea. 😄
+                If you've made it this far... thank you. Not just for going
+                through this little birthday surprise, but for being someone who
+                has unknowingly made my days a little brighter.
               </p>
 
               <p>
-                I just wanted to say that I'm genuinely grateful our paths
-                crossed.
+                I don't think I've ever properly said this, but I'm genuinely
+                grateful that our paths crossed. Out of all the people in the
+                world, somehow we ended up meeting, and I'm really happy we did.
               </p>
 
               <p>
-                Thank you for all the random conversations, unnecessary debates,
-                food discussions, memes, and the little moments that somehow
-                became some of my favorite memories.
+                I honestly enjoy every moment we spend together. Whether it's
+                our long calls, watching movies, talking about random things,
+                sharing memes, debating over the silliest topics, or just
+                sitting there in comfortable silence... they've become some of
+                my favorite moments.
               </p>
 
               <p>
-                One thing I've always admired about you is how genuine you are.
-                You're self-aware, kind, and never too proud to admit when
-                you're wrong. That's something I really respect.
+                Even though we're miles apart and haven't really spent much time
+                together in person, I already feel so connected to you. It's a
+                strange feeling, but one that makes me smile every time I think
+                about it.
+              </p>
+
+              <p>
+                Sometimes I catch myself wondering... what if I were actually
+                there with you? Would we laugh even more? Would movie nights be
+                different? Would we randomly go out for food because neither of
+                us wanted to cook? Would we end up walking around with no real
+                destination, just enjoying each other's company?
+              </p>
+
+              <p>
+                But then I realize... it's not really about the fun itself. It's
+                about all the little things that come with a genuine connection.
+                The occasional small fights that we'd eventually laugh about.
+                Taking turns treating each other to food. Being there during the
+                good days and the not-so-good ones. Making ordinary moments feel
+                special simply because of who you're spending them with.
+              </p>
+
+              <p>
+                That's something I've always admired about you too. You're
+                incredibly genuine. You're kind, thoughtful, self-aware, and
+                never afraid to admit when you're wrong. Those qualities are
+                honestly rare, and they're a big part of why I respect you so
+                much.
               </p>
 
               <p>
                 And despite all that maturity, you still get excited over the
-                smallest things. I honestly hope life never changes that part of
-                you.
+                smallest things. I really hope life never changes that part of
+                you because it's one of the most beautiful things about you.
               </p>
 
               <p>
-                Whether you realize it or not, you've made quite a few ordinary
-                days a little brighter.
+                Whether you realize it or not, you've become someone I genuinely
+                look forward to talking to. Thank you for every conversation,
+                every laugh, every movie, every random discussion, and every
+                memory we've made so far.
               </p>
 
-              <p className="font-semibold text-center text-pink-500 text-xl">
-                So here's to more laughter, more good food, more adventures, and
-                a wonderful year ahead.
+              <p className="text-center text-xl font-semibold text-pink-500">
+                Here's to creating many more memories together... hopefully some
+                of them in person. 🤍
               </p>
 
-              <p className="text-center text-2xl">Happy Birthday. 🤍</p>
+              <p className="text-center text-2xl">Happy Birthday.</p>
+
+              <p className="text-right italic">
+                With lots of warmth,
+                <br />
+                Shanmukha
+              </p>
             </div>
           </LetterCard>
         </div>

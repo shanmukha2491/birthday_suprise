@@ -160,7 +160,6 @@ const Finale = () => {
               transition={{ delay: 1 }}
               className="mt-8 text-xl font-semibold text-pink-500"
             >
-              Happy Birthday. 🤍
               <br />
               Stay happy, keep exploring, and never lose that childlike
               excitement.
