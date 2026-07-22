@@ -5,7 +5,7 @@ const DesktopOnly = ({ children }) => {
     <>
       {/* Mobile & Tablet */}
 
-      <div className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-br from-pink-50 via-white to-purple-100 px-8 text-center lg:hidden">
+      <div className="flex min-h-screen flex-col items-center justify-center bg-linear-to-br from-pink-50 via-white to-purple-100 px-8 text-center lg:hidden">
         <img src={desktopGif} alt="Desktop Only" className="w-72" />
 
         <h1 className="mt-8 text-3xl font-bold text-pink-500">
